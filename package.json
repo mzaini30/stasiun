@@ -1,0 +1,24 @@
+{
+  "name": "stasiun",
+  "version": "1.0.0",
+  "description": "Ibarat sebuah stasiun untuk semua kebutuhan",
+  "scripts": {
+    "build": "pug web/ -P"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mzaini30/stasiun.git"
+  },
+  "keywords": ["pug", "webapps"],
+  "author": "Muhammad Zaini",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mzaini30/stasiun/issues"
+  },
+  "homepage": "https://github.com/mzaini30/stasiun#readme",
+  "devDependencies": {
+    "jstransformer-coffee": "^2.0.1",
+    "jstransformer-stylus": "^1.5.0",
+    "pug-cli": "1.0.0-alpha6"
+  }
+}
