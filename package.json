@@ -3,13 +3,17 @@
   "version": "1.0.0",
   "description": "Ibarat sebuah stasiun untuk semua kebutuhan",
   "scripts": {
-    "build": "pug web/ -P"
+    "dev": "pug src/ -o static/ -w",
+    "build": "pug src/ -o static/"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mzaini30/stasiun.git"
   },
-  "keywords": ["pug", "webapps"],
+  "keywords": [
+    "pug",
+    "webapps"
+  ],
   "author": "Muhammad Zaini",
   "license": "MIT",
   "bugs": {
