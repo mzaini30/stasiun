@@ -1,0 +1,35 @@
+extends base.pug
+
+block head
+  title WA Generator
+  style
+    :stylus
+      .hasilnya 
+        user-select all
+        overflow auto
+
+//- https://web.whatsapp.com/send/?phone=6281545143654&text=kucing
+block body
+  form.app
+    .mb-3 
+      label WA Number
+      input.form-control(placeholder="6281234567890" required v-model="wa_number")
+    .mb-3
+      label Message
+      textarea.form-control(placeholder="Input your message here" required rows="10" v-model="message")
+    .mb-3
+      input.btn.btn-success(type="submit" value="Generate" @click.prevent="olah")
+    .mb-3
+      label Result
+      .hasilnya.form-control {{hasilnya}}
+
+  script(src="/vue.js")
+  script
+    :coffee
+      PetiteVue.createApp({
+        wa_number: ""
+        message: ""
+        hasilnya: ""
+        olah: ->
+          @hasilnya = "https://web.whatsapp.com/send/?phone=#{@wa_number}&text=#{encodeURIComponent @message}"
+      }).mount(".app")
