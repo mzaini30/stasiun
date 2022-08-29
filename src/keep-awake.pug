@@ -1,0 +1,10 @@
+extends base.pug
+
+block head
+	title Keep Awake
+
+block body
+	p The computer keep awake, not sleep.
+	script
+		:coffee
+			screen_lock = await navigator.wakeLock.request('screen')
