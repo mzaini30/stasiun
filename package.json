@@ -1,28 +1,18 @@
 {
-  "name": "stasiun",
-  "version": "1.0.0",
-  "description": "Ibarat sebuah stasiun untuk semua kebutuhan",
+  "name": "iles-app",
+  "version": "0.0.0",
   "scripts": {
-    "dev": "pug src/ -o static/ -w",
-    "build": "pug src/ -o static/"
+    "dev": "iles dev --open",
+    "build": "iles build",
+    "preview": "iles preview --open --port 5050",
+    "typecheck": "vue-tsc --noEmit"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mzaini30/stasiun.git"
+  "engines": {
+    "node": "^14.18 || >= 16.0.0"
   },
-  "keywords": [
-    "pug",
-    "webapps"
-  ],
-  "author": "Muhammad Zaini",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/mzaini30/stasiun/issues"
-  },
-  "homepage": "https://github.com/mzaini30/stasiun#readme",
   "devDependencies": {
-    "jstransformer-coffee": "^2.0.1",
-    "jstransformer-stylus": "^1.5.0",
-    "pug-cli": "1.0.0-alpha6"
+    "iles": "^0.8.0",
+    "typescript": "^4.5",
+    "vue-tsc": "^0.38"
   }
 }
